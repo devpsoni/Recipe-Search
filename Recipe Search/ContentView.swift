@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let dataService = DataService()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button{
+                Task {
+                    let recipes = await dataService.fetchRecipes(query: "pasta")
+                    print(recipes)
+                }
+            } label: {
+                Text("Test Request")
+            }
         }
         .padding()
     }
