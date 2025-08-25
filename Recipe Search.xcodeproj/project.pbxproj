@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		261900D12E5ADFCE0072187B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261900CC2E5ADFCE0072187B /* Assets.xcassets */; };
-		261900D22E5ADFCE0072187B /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 261900CD2E5ADFCE0072187B /* Config.xcconfig */; };
 		261900D32E5ADFCE0072187B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261900CE2E5ADFCE0072187B /* ContentView.swift */; };
 		261900D42E5ADFCE0072187B /* Recipe_SearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261900CF2E5ADFCE0072187B /* Recipe_SearchApp.swift */; };
 		26C767992E5C4155001A29C7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C767982E5C4155001A29C7 /* Recipe.swift */; };
 		26C767BC2E5C41F0001A29C7 /* RecipeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C767BB2E5C41F0001A29C7 /* RecipeSearchResponse.swift */; };
 		26C767BF2E5C42B0001A29C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C767BE2E5C42B0001A29C7 /* DataService.swift */; };
+		26C767C12E5C7079001A29C7 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 26C767C02E5C7079001A29C7 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		261900B22E5ADA0E0072187B /* Recipe Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261900CC2E5ADFCE0072187B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		261900CD2E5ADFCE0072187B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		261900CE2E5ADFCE0072187B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		261900CF2E5ADFCE0072187B /* Recipe_SearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_SearchApp.swift; sourceTree = "<group>"; };
 		26C767982E5C4155001A29C7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		26C767BB2E5C41F0001A29C7 /* RecipeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchResponse.swift; sourceTree = "<group>"; };
 		26C767BE2E5C42B0001A29C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		26C767C02E5C7079001A29C7 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				261900CE2E5ADFCE0072187B /* ContentView.swift */,
 				261900CF2E5ADFCE0072187B /* Recipe_SearchApp.swift */,
 				261900CC2E5ADFCE0072187B /* Assets.xcassets */,
-				261900CD2E5ADFCE0072187B /* Config.xcconfig */,
+				26C767C02E5C7079001A29C7 /* Config.xcconfig */,
 			);
 			path = "Recipe Search";
 			sourceTree = "<group>";
@@ -145,8 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C767C12E5C7079001A29C7 /* Config.xcconfig in Resources */,
 				261900D12E5ADFCE0072187B /* Assets.xcassets in Resources */,
-				261900D22E5ADFCE0072187B /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +170,6 @@
 /* Begin XCBuildConfiguration section */
 		261900BB2E5ADA100072187B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261900CD2E5ADFCE0072187B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -235,7 +234,6 @@
 		};
 		261900BC2E5ADA100072187B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261900CD2E5ADFCE0072187B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -293,7 +291,6 @@
 		};
 		261900BE2E5ADA100072187B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261900CD2E5ADFCE0072187B /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,7 +320,6 @@
 		};
 		261900BF2E5ADA100072187B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261900CD2E5ADFCE0072187B /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
