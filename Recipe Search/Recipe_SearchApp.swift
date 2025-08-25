@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Recipe_SearchApp: App {
+    
+    let vm = RecipeSearchViewModel(dataService: DataService())
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(vm)
         }
     }
 }

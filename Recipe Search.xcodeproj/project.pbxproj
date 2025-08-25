@@ -14,6 +14,7 @@
 		26C767BC2E5C41F0001A29C7 /* RecipeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C767BB2E5C41F0001A29C7 /* RecipeSearchResponse.swift */; };
 		26C767BF2E5C42B0001A29C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C767BE2E5C42B0001A29C7 /* DataService.swift */; };
 		26C767C12E5C7079001A29C7 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 26C767C02E5C7079001A29C7 /* Config.xcconfig */; };
+		26C767C72E5C7376001A29C7 /* RecipeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C767C62E5C7376001A29C7 /* RecipeSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		26C767BB2E5C41F0001A29C7 /* RecipeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchResponse.swift; sourceTree = "<group>"; };
 		26C767BE2E5C42B0001A29C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		26C767C02E5C7079001A29C7 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		26C767C62E5C7376001A29C7 /* RecipeSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		261900D02E5ADFCE0072187B /* Recipe Search */ = {
 			isa = PBXGroup;
 			children = (
+				26C767C82E5C7604001A29C7 /* ViewModels */,
 				261900D52E5ADFD30072187B /* Models */,
 				26C767BD2E5C4282001A29C7 /* Networking */,
 				261900CE2E5ADFCE0072187B /* ContentView.swift */,
@@ -82,6 +85,14 @@
 				26C767BE2E5C42B0001A29C7 /* DataService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		26C767C82E5C7604001A29C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				26C767C62E5C7376001A29C7 /* RecipeSearchViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				26C767BC2E5C41F0001A29C7 /* RecipeSearchResponse.swift in Sources */,
 				261900D42E5ADFCE0072187B /* Recipe_SearchApp.swift in Sources */,
 				26C767BF2E5C42B0001A29C7 /* DataService.swift in Sources */,
+				26C767C72E5C7376001A29C7 /* RecipeSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
