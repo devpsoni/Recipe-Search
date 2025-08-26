@@ -17,16 +17,14 @@ struct DataService {
         }
         
         // 2. Create URL
-        var endpointUrlString = "https://api.spoonacular.com/recipes/complexSearch"
+        var endpointUrlString = "https://api.spoonacular.com/recipes/complexSearch?apiKey=\(apiKey)"
         if query != nil && query != "" {
-            endpointUrlString.append("?query=\(query!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)")
+            endpointUrlString.append("&query=\(query!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)")
         }
         
         if let url = URL(string: endpointUrlString) {
-            
             // 3. Create Request
             var request = URLRequest(url: url)
-            request.addValue(apiKey, forHTTPHeaderField: "x-api-key")
             request.httpMethod = "GET"
             
             // 4. Send Request
